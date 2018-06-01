@@ -19,7 +19,6 @@
     PlayerViewController *playerViewController = [PlayerViewController new];
     self.window.rootViewController = playerViewController;
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 

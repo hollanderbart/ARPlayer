@@ -22,7 +22,7 @@
 + (void)handlePlayback:(UITapGestureRecognizer *)recognizer
            inSceneView:(ARSCNView *)sceneView {
     CGPoint tapPoint = [recognizer locationInView:sceneView];
-    NSArray<SCNHitTestResult *> *result = [sceneView hitTest:tapPoint options:nil];
+    NSArray<SCNHitTestResult *> *result = [sceneView hitTest:tapPoint options:@{ SCNHitTestOptionBoundingBoxOnly : @YES }];
     if (result.count != 0) {
         SCNHitTestResult *hitResult = [result firstObject];
         MediaPlayerNode *mediaPlayerNode = (MediaPlayerNode *)[sceneView.scene.rootNode childNodeWithName:kMediaPlayerNode
@@ -64,11 +64,17 @@
         if (arHitTestResults.count != 0) {
             ARHitTestResult *hitResult = [arHitTestResults firstObject];
             simd_float4 column = hitResult.anchor.transform.columns[3];
-            
-            MediaPlayerNode *mediaPlayerNode = [[MediaPlayerNode alloc] initWithPlaylist:[Utils playlist]];
-            mediaPlayerNode.position = SCNVector3Make(column.x, column.y, column.z);
-            [mediaPlayerNode play];
-            [sceneView.scene.rootNode addChildNode:mediaPlayerNode];
+
+            [Utils getAllStreams:^(NSArray<NSURL *> *allStreamUrls) {
+                MediaPlayerNode *mediaPlayerNode = [[MediaPlayerNode alloc] initWithPlaylist:allStreamUrls];
+                mediaPlayerNode.position = SCNVector3Make(column.x, column.y, column.z);
+                CGFloat pinchScaleX = mediaPlayerNode.scale.x * 2;
+                CGFloat pinchScaleY = mediaPlayerNode.scale.y * 2;
+                CGFloat pinchScaleZ = mediaPlayerNode.scale.z * 2;
+                mediaPlayerNode.scale = SCNVector3Make(pinchScaleX, pinchScaleY, pinchScaleZ);
+                [mediaPlayerNode play];
+                [sceneView.scene.rootNode addChildNode:mediaPlayerNode];
+            }];
         }
     }
 }

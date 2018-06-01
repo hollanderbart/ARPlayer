@@ -7,6 +7,7 @@
 //
 
 @import Foundation;
+@import SceneKit;
 
 extern NSString * const kMediaPlayerNode;
 extern NSString * const kTVNode;
@@ -21,6 +22,10 @@ extern NSString * const kPreviousTrackNode;
 + (void)handleTouch:(SCNNode *)node;
 
 + (SCNVector3)getBoundingBox:(SCNNode *)node;
+
++ (void)getStream:(NSString *)channel :(void (^)(NSURL* streamUrl))finishBlock;
+
++ (void)getAllStreams:(void (^)(NSArray<NSURL*>* allStreamUrls))finishBlock;
 
 + (NSArray<NSURL *> *)playlist;
 

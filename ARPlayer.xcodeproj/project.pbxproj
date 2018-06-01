@@ -13,10 +13,6 @@
 		6D06790F1F804CDB0081574B /* TVNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D06790E1F804CDB0081574B /* TVNode.m */; };
 		6D14D0DC1F86C6A800726514 /* sample_video_iTunes.mov in Resources */ = {isa = PBXBuildFile; fileRef = 6D14D0DB1F86C6A800726514 /* sample_video_iTunes.mov */; };
 		6D15BA301F744F4C002FABB0 /* PlaneRendererNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D15BA2F1F744F4C002FABB0 /* PlaneRendererNode.m */; };
-		6D1BB41F1F77D2C500E5175E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1BB41D1F77D2C500E5175E /* SettingsViewController.m */; };
-		6D1BB4201F77D2C500E5175E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1BB41E1F77D2C500E5175E /* SettingsViewController.xib */; };
-		6D1BB4241F77D3B100E5175E /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1BB4221F77D3B100E5175E /* PlayerViewController.m */; };
-		6D1BB4251F77D3B100E5175E /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D1BB4231F77D3B100E5175E /* PlayerViewController.xib */; };
 		6D1CAD511F7713E800D250CB /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1CAD501F7713E800D250CB /* Utils.m */; };
 		6D22FD051F768EAE006CDBD5 /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D22FD041F768EAE006CDBD5 /* SettingsManager.m */; };
 		6D2A5E321F73233F0095F03A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2A5E311F73233F0095F03A /* AppDelegate.m */; };
@@ -27,6 +23,10 @@
 		6D8E92841F81014900046E25 /* GestureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8E92831F81014900046E25 /* GestureHandler.m */; };
 		6DA2E01E1F7E655100B82663 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA2E01D1F7E655100B82663 /* Art.scnassets */; };
 		6DCC3AB81F85785300E4C94B /* NextTrackNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC3AB71F85785300E4C94B /* NextTrackNode.m */; };
+		935E3BE51FAC751F002DBC8E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 935E3BE21FAC751F002DBC8E /* SettingsViewController.xib */; };
+		935E3BE61FAC751F002DBC8E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 935E3BE41FAC751F002DBC8E /* SettingsViewController.m */; };
+		935E3BEA1FAC7528002DBC8E /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 935E3BE81FAC7528002DBC8E /* PlayerViewController.m */; };
+		935E3BEB1FAC7528002DBC8E /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 935E3BE91FAC7528002DBC8E /* PlayerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,12 +41,6 @@
 		6D14D0DB1F86C6A800726514 /* sample_video_iTunes.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sample_video_iTunes.mov; sourceTree = "<group>"; };
 		6D15BA2E1F744F4C002FABB0 /* PlaneRendererNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaneRendererNode.h; sourceTree = "<group>"; };
 		6D15BA2F1F744F4C002FABB0 /* PlaneRendererNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaneRendererNode.m; sourceTree = "<group>"; };
-		6D1BB41C1F77D2C500E5175E /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		6D1BB41D1F77D2C500E5175E /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		6D1BB41E1F77D2C500E5175E /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
-		6D1BB4211F77D3B100E5175E /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
-		6D1BB4221F77D3B100E5175E /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
-		6D1BB4231F77D3B100E5175E /* PlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
 		6D1CAD4F1F7713E800D250CB /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		6D1CAD501F7713E800D250CB /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		6D22FD031F768EAE006CDBD5 /* SettingsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsManager.h; sourceTree = "<group>"; };
@@ -65,6 +59,13 @@
 		6DA2E01D1F7E655100B82663 /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
 		6DCC3AB61F85785300E4C94B /* NextTrackNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextTrackNode.h; sourceTree = "<group>"; };
 		6DCC3AB71F85785300E4C94B /* NextTrackNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextTrackNode.m; sourceTree = "<group>"; };
+		935E3BE21FAC751F002DBC8E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		935E3BE31FAC751F002DBC8E /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		935E3BE41FAC751F002DBC8E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		935E3BE71FAC7528002DBC8E /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		935E3BE81FAC7528002DBC8E /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		935E3BE91FAC7528002DBC8E /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
+		936194E61FAC7D8A00C75C5C /* ARPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +90,8 @@
 		6D1BB4151F77BDE100E5175E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6D1BB4211F77D3B100E5175E /* PlayerViewController.h */,
-				6D1BB4221F77D3B100E5175E /* PlayerViewController.m */,
-				6D1BB4231F77D3B100E5175E /* PlayerViewController.xib */,
-				6D1BB41C1F77D2C500E5175E /* SettingsViewController.h */,
-				6D1BB41D1F77D2C500E5175E /* SettingsViewController.m */,
-				6D1BB41E1F77D2C500E5175E /* SettingsViewController.xib */,
+				935E3BE01FAC74E6002DBC8E /* Player */,
+				935E3BE11FAC7503002DBC8E /* Setting */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -102,20 +99,9 @@
 		6D1CAD521F77162C00D250CB /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
-				6D2A5E461F7323920095F03A /* MediaPlayerNode.h */,
-				6D2A5E471F7323920095F03A /* MediaPlayerNode.m */,
-				6D06790D1F804CDB0081574B /* TVNode.h */,
-				6D06790E1F804CDB0081574B /* TVNode.m */,
-				6D15BA2E1F744F4C002FABB0 /* PlaneRendererNode.h */,
-				6D15BA2F1F744F4C002FABB0 /* PlaneRendererNode.m */,
-				6D0679041F803D8F0081574B /* PlayNode.h */,
-				6D0679051F803D8F0081574B /* PlayNode.m */,
-				6D0679071F803DA20081574B /* StopNode.h */,
-				6D0679081F803DA20081574B /* StopNode.m */,
-				6D06790A1F803DB00081574B /* CurrentTimeNode.h */,
-				6D06790B1F803DB00081574B /* CurrentTimeNode.m */,
-				6DCC3AB61F85785300E4C94B /* NextTrackNode.h */,
-				6DCC3AB71F85785300E4C94B /* NextTrackNode.m */,
+				936194EA1FACB04B00C75C5C /* MediaPlayer */,
+				936194E91FACB03F00C75C5C /* Plane */,
+				933154221FAC758800078212 /* TV */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -125,6 +111,7 @@
 			children = (
 				6D2A5E2F1F73233F0095F03A /* ARPlayer */,
 				6D2A5E2E1F73233F0095F03A /* Products */,
+				936194E61FAC7D8A00C75C5C /* ARPlayer-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +146,93 @@
 			path = ARPlayer;
 			sourceTree = "<group>";
 		};
+		933154221FAC758800078212 /* TV */ = {
+			isa = PBXGroup;
+			children = (
+				933154261FAC75CB00078212 /* CurrentTime */,
+				933154251FAC75AB00078212 /* Next */,
+				933154241FAC75A200078212 /* Stop */,
+				933154231FAC759900078212 /* Play */,
+				6D06790D1F804CDB0081574B /* TVNode.h */,
+				6D06790E1F804CDB0081574B /* TVNode.m */,
+			);
+			path = TV;
+			sourceTree = "<group>";
+		};
+		933154231FAC759900078212 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				6D0679041F803D8F0081574B /* PlayNode.h */,
+				6D0679051F803D8F0081574B /* PlayNode.m */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		933154241FAC75A200078212 /* Stop */ = {
+			isa = PBXGroup;
+			children = (
+				6D0679071F803DA20081574B /* StopNode.h */,
+				6D0679081F803DA20081574B /* StopNode.m */,
+			);
+			path = Stop;
+			sourceTree = "<group>";
+		};
+		933154251FAC75AB00078212 /* Next */ = {
+			isa = PBXGroup;
+			children = (
+				6DCC3AB61F85785300E4C94B /* NextTrackNode.h */,
+				6DCC3AB71F85785300E4C94B /* NextTrackNode.m */,
+			);
+			path = Next;
+			sourceTree = "<group>";
+		};
+		933154261FAC75CB00078212 /* CurrentTime */ = {
+			isa = PBXGroup;
+			children = (
+				6D06790A1F803DB00081574B /* CurrentTimeNode.h */,
+				6D06790B1F803DB00081574B /* CurrentTimeNode.m */,
+			);
+			path = CurrentTime;
+			sourceTree = "<group>";
+		};
+		935E3BE01FAC74E6002DBC8E /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				935E3BE71FAC7528002DBC8E /* PlayerViewController.h */,
+				935E3BE81FAC7528002DBC8E /* PlayerViewController.m */,
+				935E3BE91FAC7528002DBC8E /* PlayerViewController.xib */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		935E3BE11FAC7503002DBC8E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				935E3BE31FAC751F002DBC8E /* SettingsViewController.h */,
+				935E3BE41FAC751F002DBC8E /* SettingsViewController.m */,
+				935E3BE21FAC751F002DBC8E /* SettingsViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		936194E91FACB03F00C75C5C /* Plane */ = {
+			isa = PBXGroup;
+			children = (
+				6D15BA2E1F744F4C002FABB0 /* PlaneRendererNode.h */,
+				6D15BA2F1F744F4C002FABB0 /* PlaneRendererNode.m */,
+			);
+			path = Plane;
+			sourceTree = "<group>";
+		};
+		936194EA1FACB04B00C75C5C /* MediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6D2A5E461F7323920095F03A /* MediaPlayerNode.h */,
+				6D2A5E471F7323920095F03A /* MediaPlayerNode.m */,
+			);
+			path = MediaPlayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,6 +264,7 @@
 				TargetAttributes = {
 					6D2A5E2C1F73233F0095F03A = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -221,8 +296,8 @@
 				6D2A5E3D1F73233F0095F03A /* LaunchScreen.storyboard in Resources */,
 				6D14D0DC1F86C6A800726514 /* sample_video_iTunes.mov in Resources */,
 				6D2A5E3A1F73233F0095F03A /* Assets.xcassets in Resources */,
-				6D1BB4251F77D3B100E5175E /* PlayerViewController.xib in Resources */,
-				6D1BB4201F77D2C500E5175E /* SettingsViewController.xib in Resources */,
+				935E3BE51FAC751F002DBC8E /* SettingsViewController.xib in Resources */,
+				935E3BEB1FAC7528002DBC8E /* PlayerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,17 +311,17 @@
 				6D2A5E401F73233F0095F03A /* main.m in Sources */,
 				6D0679061F803D8F0081574B /* PlayNode.m in Sources */,
 				6D2A5E481F7323930095F03A /* MediaPlayerNode.m in Sources */,
-				6D1BB41F1F77D2C500E5175E /* SettingsViewController.m in Sources */,
-				6D1BB4241F77D3B100E5175E /* PlayerViewController.m in Sources */,
 				6D15BA301F744F4C002FABB0 /* PlaneRendererNode.m in Sources */,
 				6D8E92841F81014900046E25 /* GestureHandler.m in Sources */,
 				6D22FD051F768EAE006CDBD5 /* SettingsManager.m in Sources */,
 				6D06790F1F804CDB0081574B /* TVNode.m in Sources */,
+				935E3BEA1FAC7528002DBC8E /* PlayerViewController.m in Sources */,
 				6D0679091F803DA20081574B /* StopNode.m in Sources */,
 				6DCC3AB81F85785300E4C94B /* NextTrackNode.m in Sources */,
 				6D1CAD511F7713E800D250CB /* Utils.m in Sources */,
 				6D2A5E321F73233F0095F03A /* AppDelegate.m in Sources */,
 				6D06790C1F803DB00081574B /* CurrentTimeNode.m in Sources */,
+				935E3BE61FAC751F002DBC8E /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,12 +447,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P4RNZKZ54K;
+				DEVELOPMENT_TEAM = 7S7JD544LJ;
 				INFOPLIST_FILE = ARPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makhun.ARPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -386,12 +465,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P4RNZKZ54K;
+				DEVELOPMENT_TEAM = 7S7JD544LJ;
 				INFOPLIST_FILE = ARPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makhun.ARPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ARPlayer-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

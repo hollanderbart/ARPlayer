@@ -68,9 +68,9 @@ static void * CurrentItemObservationContext = &CurrentItemObservationContext;
     
     [self.tvNode addChildNode:self.videoRendererNode];
     
-    _currentTimeNode = [CurrentTimeNode node];
-    _currentTimeNode.position = SCNVector3Make(-0.025f, -0.1f, 0.003f);
-    [self.videoRendererNode addChildNode:_currentTimeNode];
+//    _currentTimeNode = [CurrentTimeNode node];
+//    _currentTimeNode.position = SCNVector3Make(-0.025f, -0.1f, 0.003f);
+//    [self.videoRendererNode addChildNode:_currentTimeNode];
 }
 
 - (void)updateVideoNodeWithPlayer:(AVPlayer *)player {
@@ -78,8 +78,8 @@ static void * CurrentItemObservationContext = &CurrentItemObservationContext;
     
     [_player pause];
     [_player replaceCurrentItemWithPlayerItem:nil];
-    [_currentTimeNode resetTimeForPlayer:_player];
-    
+//    [_currentTimeNode resetTimeForPlayer:_player];
+
     if (player == nil) {
         self.videoRendererNode.geometry.firstMaterial = [self mainMaterial];
         _player = nil;
@@ -88,8 +88,8 @@ static void * CurrentItemObservationContext = &CurrentItemObservationContext;
         _player = player;
         playerMaterial.diffuse.contents = player;
         self.videoRendererNode.geometry.materials = @[playerMaterial, mainMaterial, mainMaterial, mainMaterial, mainMaterial, mainMaterial];
-        [_currentTimeNode subscribeForPlayerTimeUpdates:_player];
-        
+//        [_currentTimeNode subscribeForPlayerTimeUpdates:_player];
+
         [_player play];
     }
 }

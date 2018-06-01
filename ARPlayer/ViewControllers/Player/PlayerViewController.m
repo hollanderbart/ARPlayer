@@ -44,7 +44,11 @@
     [super viewWillAppear:animated];
     
     ARWorldTrackingConfiguration *configuration = [ARWorldTrackingConfiguration new];
-    configuration.planeDetection = ARPlaneDetectionHorizontal;
+    if (@available(iOS 11.3, *)) {
+        configuration.planeDetection = ARPlaneDetectionHorizontal | ARPlaneDetectionVertical;
+    } else {
+        configuration.planeDetection = ARPlaneDetectionHorizontal;
+    }
     self.sceneView.automaticallyUpdatesLighting = YES;
     [self.sceneView.session runWithConfiguration:configuration];
 }
@@ -66,8 +70,10 @@
     self.planes = [NSMutableDictionary new];
     
     self.sceneView.delegate = self;
-    self.sceneView.showsStatistics = NO;
-    
+    self.sceneView.showsStatistics = YES;
+    self.sceneView.debugOptions = ARSCNDebugOptionShowFeaturePoints;
+    self.sceneView.antialiasingMode = SCNAntialiasingModeMultisampling4X;
+
     SCNScene *scene = [SCNScene scene];
     self.sceneView.scene = scene;
 }
@@ -165,6 +171,10 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
 
 #pragma mark - ARSCNViewDelegate
 
+/*
+ Called when a SceneKit node corresponding to a
+ new AR anchor has been added to the scene.
+ */
 - (void)renderer:(id <SCNSceneRenderer>)renderer
       didAddNode:(SCNNode *)node
        forAnchor:(ARAnchor *)anchor {
@@ -178,6 +188,10 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
     [node addChildNode:plane];
 }
 
+/*
+ Called when a SceneKit node's properties have been
+ updated to match the current state of its corresponding anchor.
+ */
 - (void)renderer:(id <SCNSceneRenderer>)renderer
    didUpdateNode:(SCNNode *)node
        forAnchor:(ARAnchor *)anchor {
@@ -189,6 +203,10 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
     [plane update:(ARPlaneAnchor *)anchor];
 }
 
+/*
+ Called when SceneKit node corresponding to a removed
+ AR anchor has been removed from the scene.
+ */
 - (void)renderer:(id <SCNSceneRenderer>)renderer
    didRemoveNode:(SCNNode *)node
        forAnchor:(ARAnchor *)anchor {
